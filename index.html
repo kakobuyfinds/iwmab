@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>KameyMall spreadsheet | Guía de tallas, fotos QC y envío</title>
+  <meta name="description" content="Explora diez categorías con la guía KameyMall spreadsheet. Compara enlaces y tallas, revisa fotos QC y estima el coste del paquete antes de enviarlo.">
+  <meta name="theme-color" content="#24204b">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="KameyMall spreadsheet | Guía de tallas, fotos QC y envío">
+  <meta property="og:description" content="Diez categorías y una ficha práctica para comparar productos, revisar fotos QC y preparar un envío.">
+  <!-- Investigación editorial: la consulta en Bing no devolvió una primera página pertinente verificable. Se revisaron diez sitios relacionados mediante búsqueda web como base temática alternativa. -->
+  <style>
+    :root {
+      --ink: #211d43;
+      --muted: #514d69;
+      --paper: #f7f6ff;
+      --line: #dcd8ec;
+      --ice: #c3f4ef;
+      --accent: #49389b;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 1rem/1.65 system-ui, sans-serif; }
+    .wrap { width: min(68rem, calc(100% - 2rem)); margin-inline: auto; }
+    h1, h2, h3, p, figure, dl { margin: 0; }
+    h1, h2, h3 { line-height: 1.17; }
+    h1 { font-size: clamp(2.1rem, 7.1vw, 5rem); letter-spacing: -.055em; overflow-wrap: anywhere; }
+    h2 { font-size: clamp(1.55rem, 3.8vw, 2.6rem); letter-spacing: -.035em; }
+    h3 { font-size: 1.25rem; }
+    a { color: inherit; text-underline-offset: .2em; }
+    a:focus-visible, summary:focus-visible { outline: .2rem solid var(--accent); outline-offset: .22rem; }
+    img { display: block; max-width: 100%; height: auto; }
+    header, footer { background: #24204b; color: #fff; }
+    header .wrap, footer .wrap { padding-block: .9rem; }
+    header a { color: var(--ice); font-weight: 750; }
+    header a:focus-visible, footer a:focus-visible { outline-color: var(--ice); }
+    .intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(13rem, 28%); gap: 1.5rem; align-items: center; padding-block: 2rem 1.45rem; }
+    .label { color: var(--accent); font-size: .78rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+    .intro p + h1 { margin-block: .35rem .7rem; }
+    .intro .answer { max-width: 62ch; }
+    .intro figure { padding: .55rem; border: 1px solid var(--line); background: #fff; }
+    .intro img { width: 100%; aspect-ratio: 16 / 10; object-fit: contain; }
+    figcaption { padding: .45rem .25rem .15rem; font-size: .84rem; color: var(--muted); }
+    nav { background: var(--ice); border-radius: .7rem; padding: clamp(.8rem, 3vw, 1.35rem); }
+    nav h2 { font-size: 1.4rem; }
+    nav ul { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .45rem; margin: .7rem 0 0; padding: 0; list-style: none; }
+    nav li { display: flex; }
+    nav a { display: flex; align-items: center; width: 100%; min-height: 2.8rem; padding: .4rem .6rem; border: 1px solid #7ba9a5; border-radius: .3rem; background: #f7fffe; font-weight: 650; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    .block { margin-block: 2.6rem; }
+    .block > h2 { margin-block: .25rem .9rem; }
+    .columns { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 1.5rem; align-items: start; }
+    article { border-top: 1px solid var(--line); padding-block: .9rem; }
+    article p { margin-top: .45rem; }
+    .card { padding: 1rem; background: #fff; border: 1px solid var(--line); border-top: .3rem solid var(--accent); }
+    dl { margin-top: .65rem; }
+    dl div { padding-block: .45rem; border-top: 1px solid var(--line); }
+    dt { font-weight: 750; }
+    dd { margin: 0; color: var(--muted); }
+    .gallery { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .75rem; }
+    .gallery figure { padding: .45rem; background: #fff; border: 1px solid var(--line); }
+    .gallery img { width: 100%; aspect-ratio: 1; object-fit: contain; }
+    details { padding-block: .65rem; border-top: 1px solid var(--line); }
+    details:last-of-type { border-bottom: 1px solid var(--line); }
+    summary { min-height: 2rem; cursor: pointer; font-weight: 750; }
+    details p { max-width: 72ch; margin: .3rem 0 .25rem; }
+    .cta { display: inline-block; margin-top: 1rem; padding: .55rem .9rem; background: var(--accent); color: #fff; border-radius: .35rem; font-weight: 700; }
+    @media (max-width: 49rem) {
+      nav ul { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+    @media (max-width: 36rem) {
+      .intro, .columns { grid-template-columns: 1fr; }
+      .intro { gap: .75rem; }
+      .intro figure { max-width: 24rem; }
+      nav ul, .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "inLanguage": "es",
+        "name": "KameyMall spreadsheet | Guía de tallas, fotos QC y envío",
+        "description": "Explora diez categorías con la guía KameyMall spreadsheet. Compara enlaces y tallas, revisa fotos QC y estima el coste del paquete antes de enviarlo.",
+        "about": [
+          {"@type": "Thing", "name": "KameyMall spreadsheet"},
+          {"@type": "Thing", "name": "Control de calidad antes del envío"}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "inLanguage": "es",
+        "name": "Preguntas sobre KameyMall spreadsheet",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Qué es un KameyMall spreadsheet?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Es una hoja de referencias para organizar enlaces de productos y comparar datos como talla, variante y vendedor antes de hacer un pedido."}
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo compruebo un enlace de producto que ya no abre?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Busca el identificador guardado, el nombre del vendedor y la variante. Si encuentras otra ficha, contrasta esos datos con tu referencia antes de usarla."}
+          },
+          {
+            "@type": "Question",
+            "name": "¿Las fotos QC sirven para confirmar la autenticidad?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Las fotos QC permiten revisar rasgos visibles, como etiquetas, medidas y acabados. Para verificar autenticidad, consulta la procedencia, la documentación y, cuando corresponda, un servicio especializado."}
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo estimo el coste total de un paquete?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Suma el coste del artículo, el transporte nacional, los cargos aplicables y el envío internacional estimado. Confirma el peso facturable y consulta los impuestos del destino antes de aprobar el envío."}
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/iwmab/">
+</head>
+<body>
+  <header>
+    <div class="wrap"><a href="https://www.hipobuyfind.com">www.hipobuyfind.com</a></div>
+  </header>
+  <main class="wrap">
+    <section class="intro" aria-labelledby="titulo">
+      <div>
+        <p class="label">Guía de compra en español</p>
+        <h1 id="titulo">KameyMall spreadsheet</h1>
+        <p class="answer">Un KameyMall spreadsheet es una hoja de referencias para organizar enlaces de productos y comparar tallas, variantes y vendedores. Explora el catálogo de HipobuyFind por categoría y usa esta guía para decidir qué conviene comprobar antes de pedir o enviar un artículo.</p>
+      </div>
+      <figure>
+        <img src="https://images.novelship.com/product/dior_dior_b27_low__dior_oblique_galaxy___grey_gum__0_30404.jpeg?auto=compress&amp;bg=FFFFFF&amp;fit=fill&amp;fm=webp&amp;h=480&amp;pad=30&amp;q=75&amp;trim=color&amp;w=480" width="480" height="480" alt="Zapatilla Dior B27 baja gris con suela de goma color caramelo" loading="eager" fetchpriority="high">
+        <figcaption>Dior B27 · Referencia visual de calzado</figcaption>
+      </figure>
+    </section>
+
+    <nav aria-labelledby="categorias">
+      <h2 id="categorias">Explora el catálogo por categoría</h2>
+      <ul>
+        <li><a href="https://hipobuyfind.com/category-911-Shoes.html">Calzado</a></li>
+        <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">Sudaderas y jerséis</a></li>
+        <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html">Camisetas</a></li>
+        <li><a href="https://hipobuyfind.com/category-914-Jackets.html">Chaquetas</a></li>
+        <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">Pantalones y shorts</a></li>
+        <li><a href="https://hipobuyfind.com/category-916-Headwear.html">Gorras y sombreros</a></li>
+        <li><a href="https://hipobuyfind.com/category-917-Sets.html">Conjuntos</a></li>
+        <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">Ropa interior</a></li>
+        <li><a href="https://hipobuyfind.com/category-919-Jersey.html">Camisetas deportivas</a></li>
+        <li><a href="https://hipobuyfind.com/category-920-Accessories.html">Accesorios</a></li>
+      </ul>
+    </nav>
+
+    <section class="block" aria-labelledby="lecturas">
+      <p class="label">Artículos de compra</p>
+      <h2 id="lecturas">De la ficha del vendedor al paquete</h2>
+      <div class="columns">
+        <div>
+          <article>
+            <h3>Enlaces de KameyMall y ficha del vendedor</h3>
+            <p>Al guardar un producto de Weidian, Taobao o 1688, anota el identificador del anuncio, el nombre del vendedor y la fecha de consulta. Comprueba la variante de color, la talla elegida y la disponibilidad en la ficha original. Si el enlace caduca, esos datos te ayudarán a buscar la misma referencia.</p>
+          </article>
+          <article>
+            <h3>Guía de tallas para KameyMall</h3>
+            <p>Para comparar tallas de zapatillas, mide el pie en centímetros y revisa cómo define el vendedor la longitud de la plantilla. Para una sudadera, toma el ancho de pecho, el largo de manga y el largo total de una prenda que te quede bien. En pantalones, revisa la cintura en plano y la entrepierna. Compara cada medida con la tabla de la variante elegida.</p>
+          </article>
+          <article>
+            <h3>Fotos QC de KameyMall</h3>
+            <p>QC significa control de calidad. En una foto de almacén, busca la etiqueta de talla y un detalle de las costuras. Para el calzado, comprueba la simetría del par y el perfil de la suela. En una camiseta deportiva, revisa la posición del estampado. Si una medida no se ve, pide una foto con regla y consulta el plazo para solicitar cambios o devoluciones.</p>
+          </article>
+          <article>
+            <h3>Envío de KameyMall y coste del paquete</h3>
+            <p>Separa el precio del artículo, el transporte nacional al almacén, la comisión de compra y el envío internacional. Al comparar rutas, pregunta por el peso real, el peso volumétrico, el seguimiento y las restricciones del destino. Si vas a consolidar paquetes, solicita las dimensiones del embalaje final antes de decidir.</p>
+          </article>
+        </div>
+        <aside class="card" aria-labelledby="ficha">
+          <h3 id="ficha">Qué anotar para comparar dos ofertas</h3>
+          <dl>
+            <div><dt>Origen</dt><dd>Mercado, vendedor, ID de producto y fecha de revisión.</dd></div>
+            <div><dt>Variante</dt><dd>Color, talla de etiqueta y medidas en centímetros.</dd></div>
+            <div><dt>Revisión</dt><dd>Fotos del artículo, detalles pendientes y plazo de devolución.</dd></div>
+            <div><dt>Presupuesto</dt><dd>Moneda, coste por artículo, envío estimado e impuestos aplicables.</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section class="block" aria-labelledby="referencias">
+      <p class="label">Selección visual</p>
+      <h2 id="referencias">Qué detalles mirar según el artículo</h2>
+      <div class="gallery">
+        <figure>
+          <img src="https://www.ego-sport.pl/hpeciai/a63432ceca39f4d6581781f14515d795/pol_pl_Nike-buty-meskie-Air-Force-1-07-CW2288-111-biale-14786_1.webp" width="1200" height="1200" alt="Zapatilla Nike Air Force 1 ’07 blanca con logotipo lateral y puntera perforada" loading="lazy" decoding="async">
+          <figcaption>Nike Air Force 1 ’07 · Puntera y unión con la suela.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://fr.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-blouson-monogram-zippe--HTB47EURC853_PM2_Front%20view.jpg?bgcolor=%23f8f8f8&amp;impolicy=bgcolor&amp;wid=420" width="490" height="490" alt="Vista frontal de una chaqueta Louis Vuitton con monograma y cremallera" loading="lazy" decoding="async">
+          <figcaption>Louis Vuitton · Cremallera y alineación del motivo.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://media.gucci.com/style/DarkGray_Center_0_0_490x490/1659595532/681264_3HAGJ_2564_001_100_0000_Light-Casquette-en-toileGG-jumbo.jpg" width="490" height="490" alt="Gorra Gucci Jumbo GG de lona beige con visera curva" loading="lazy" decoding="async">
+          <figcaption>Gucci Jumbo GG · Forma de la visera y costuras.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://mygemma.com/cdn/shop/products/125261-fv_2d5c9fa7-fe5b-4879-a85a-b8b259491172_480x.jpg?v=1692136182" width="480" height="480" alt="Pulsera Hermès Clic H de esmalte rojo con cierre plateado en forma de H" loading="lazy" decoding="async">
+          <figcaption>Hermès Clic H · Acabado del esmalte y cierre.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="block" aria-labelledby="preguntas">
+      <h2 id="preguntas">Preguntas sobre KameyMall spreadsheet</h2>
+      <details open>
+        <summary>¿Qué es un KameyMall spreadsheet?</summary>
+        <p>Es una hoja de referencias para organizar enlaces de productos y comparar datos como talla, variante y vendedor antes de hacer un pedido.</p>
+      </details>
+      <details>
+        <summary>¿Cómo compruebo un enlace de producto que ya no abre?</summary>
+        <p>Busca el identificador guardado, el nombre del vendedor y la variante. Si encuentras otra ficha, contrasta esos datos con tu referencia antes de usarla.</p>
+      </details>
+      <details>
+        <summary>¿Las fotos QC sirven para confirmar la autenticidad?</summary>
+        <p>Las fotos QC permiten revisar rasgos visibles, como etiquetas, medidas y acabados. Para verificar autenticidad, consulta la procedencia, la documentación y, cuando corresponda, un servicio especializado.</p>
+      </details>
+      <details>
+        <summary>¿Cómo estimo el coste total de un paquete?</summary>
+        <p>Suma el coste del artículo, el transporte nacional, los cargos aplicables y el envío internacional estimado. Confirma el peso facturable y consulta los impuestos del destino antes de aprobar el envío.</p>
+      </details>
+      <a class="cta" href="https://www.hipobuyfind.com">Visitar HipobuyFind</a>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">
+      <p>Guía editorial independiente. Las imágenes ilustran detalles de diseño. Las marcas citadas pertenecen a sus respectivos titulares.</p>
+    </div>
+  </footer>
+</body>
+</html>
